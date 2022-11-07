@@ -1,0 +1,33 @@
+@@ -0,0 +1,32 @@
+body {
+    background-color: #f9fafc
+}
+
+.brand {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #4a4a4f;
+}
+
+.card {
+    border: none;
+    background-color: transparent;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-flash {
+    position: absolute;
+    bottom: 5%;
+    min-width: 30%;
+    left: -2px;
+    background-color: #23bbbb;
+}
+
+.post-title {
+    margin-left: 5%;
+    color: lightgray;
+}
