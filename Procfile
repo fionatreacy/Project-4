@@ -1,1 +1,1 @@
-web: gunicorn exploretheworld.wsgi
+web: gunicorn codeloco.wsgi

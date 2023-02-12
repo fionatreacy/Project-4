@@ -14,9 +14,10 @@
       <h1>{% trans "Sign In" %}</h1>
 
 
-      <p>{% blocktrans %}Welcome back to Explore The World.
-        To leave a comment or like a post, please log in. If you
-        have not created an account yet, then
+      <p>{% blocktrans %}Welcome back to the Location Blog.
+        To create, edit or delete your own post or 
+        leave a comment or like a post, please log in. 
+        If you have not created an account yet, then
         <a class="link" href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
     </div>
   </div>
@@ -28,7 +29,7 @@
         {% if redirect_field_value %}
         <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
         {% endif %}
-        <button class="btn right" type="submit">{% trans "Sign In" %}</button>
+        <button class="btn right btn-lg btn-outline-dark" type="submit">{% trans "Sign In" %}</button>
       </form>
     </div>
   </div>

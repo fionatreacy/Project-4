@@ -1,26 +1,129 @@
-@@ -1,32 +1,76 @@
 body {
     background-color: #f9fafc
 }
+
+p {
+    font-family: 'Nunito', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Roboto', sans-serif;
+}
+/* Navbar*/
+
+.navbar {
+    background-color: #042960;
+    color: white;
+}
+
+.navbar-brand {
+    color: white;
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+.nav-link {
+    color: white;
+}
+
+a.nav-link.active {
+    background-color:#0b63e5;
+    color: rgba(10, 6, 6, 0.7);
+}
+
+.nav-login {
+    text-transform: uppercase;
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+.footer {
+    background-color: #042960;
+    color: white;
+}
+
+/* Landing page */
+
+.hero-image {
+    width: 100%;
+    height: 50vh;
+    background: url('https://res.cloudinary.com/dionnecloud/image/upload/v1661170547/hero-location_ojkgyn.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    position: relative;
+}
+
+.hero-container {
+    padding: 0;
+}
+
+.hero-overlay {
+    align-content: center;
+}
+
+.hero-text {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.hero-text h1 {
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.hero-text p {
+    color: white;
+    font-size: 1.75em;
+    text-align: center;
+}
+
+.btn-hero {
+    background-color: white;
+    color: blue;
+}
+
 .brand {
     font-family: "Open Sans", sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
     color: #4a4a4f;
 }
+
+/* post list page */
+
+.login-message {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
 .card {
     border: none;
     background-color: transparent;
 }
+
 .image-container {
     position: relative;
 }
+
+.card-img-top {
+    width: 100%;
+    height:40vh;
+    object-fit: cover;
+}
+
 .image-flash {
     position: absolute;
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #23bbbb;
+    background-color: #0b63e5;
 }
 
 .author {
@@ -29,45 +132,52 @@ body {
     text-transform: uppercase;
 }
 
+.card-title {
+    text-transform: uppercase;
+}
+
+/* post detail page */
+
 .masthead {
-    margin-top: 10px;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    height: 33vh;
-    width: 100%;
+    padding-top: 10px;
 }
 
 .masthead-text {
-    background-color: #445261;
-    color: white;
-    position: relative;
+    background-color: #4896e5;
 }
 
-.masthead-image {
-    position: relative;
-    overflow: hidden;
+.detail-img {
+    width: 100%;
 }
 
-.masthead-image:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 90%;
-    height: 100%;
-    width: 150%;
-    background: #445261;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
-    z-index: 100;
-}
 .post-title {
-    margin-top: 20%;
+    margin-top: 12%;
     margin-left: 5%;
+    text-transform: uppercase;
 }
 
 .post-subtitle {
     margin-left: 5%;
-    color: lightgray;
+}
+
+.posting-name {
+    text-transform: uppercase;
+}
+
+.btn-like {
+    color: #e84610;
+    border: none;
+    background: transparent;
+    padding: 0;
+}
+
+.delete-name {
+    text-transform: uppercase;
+}
+
+/* media query for less than 300px */
+@media screen and (max-width: 300px) {
+    .hero-text p {
+        font-size: 1.2em;
+    }
 }
